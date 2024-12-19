@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pixaid.LoginController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #2A0128;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="163.0" fitWidth="184.0" layoutX="94.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photos/pixAid_icon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="112.0" layoutY="262.0" text="pixAid" textFill="#f7f0f0">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="43.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="321.0" text="Transforming photography into action, one click at a time." textFill="#f7f0f0">
+               <font>
+                  <Font name="Dubai Light" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="410.0" style="-fx-background-color: #f8ebf6;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="tfUsername" layoutX="98.0" layoutY="196.0" prefHeight="28.0" prefWidth="199.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #2A0128; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="pfPassword" layoutX="98.0" layoutY="248.0" prefHeight="28.0" prefWidth="200.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #2A0128; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="tf_Showpassword" layoutX="98.0" layoutY="248.0" prefHeight="28.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #2A0128; -fx-border-width: 0 0 2 0;" />
+            <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="53.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photos/user%20icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="25.0" layoutX="51.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photos/password%20icon.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="loginBtn" layoutX="144.0" layoutY="331.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="76.0" style="-fx-background-color: #2A0128; -fx-cursor: hand;" text="Login" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="98.0" layoutY="83.0" text="Welcome Back!" textFill="#2a0128">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="457.0" text="Do not have account?" textFill="#5b0a5a" />
+            <Label alignment="CENTER" layoutX="74.0" layoutY="128.0" text="     We’re so excited to see you again! " textFill="#5b0c59" />
+            <ImageView fx:id="exit" fitHeight="16.0" fitWidth="14.0" layoutX="322.0" layoutY="7.0" onMouseClicked="#handleExitClick" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../photos/cross%20icon.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="signupBtn" layoutX="209.0" layoutY="452.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Sign Up" textFill="#2a0128" underline="true" />
+            <Button fx:id="forgotpassBtn" layoutX="130.0" layoutY="367.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Forgot password" textFill="#2a0128" underline="true" />
+            <CheckBox fx:id="showPasswordCheckBox" layoutX="98.0" layoutY="285.0" mnemonicParsing="false" onAction="#showPassword" text="Show Password" textFill="#2a0128" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

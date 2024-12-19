@@ -1,0 +1,37 @@
+/* styles.css */
+.root {
+    -fx-font-family: 'Arial';
+}
+
+.anchor-pane {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0, 0, 0);
+}
+
+.image-view {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0, 0, 0);
+    -fx-border-radius: 10px;
+}
+
+.label-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: medium;
+    -fx-text-fill: #333333;
+}
+
+.label-price {
+    -fx-font-size: 16px;
+    -fx-text-fill: #ff5722;
+}
+
+.button {
+    -fx-background-color: #ae95ad;
+    -fx-text-fill: #ffff;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #2A0128;
+}

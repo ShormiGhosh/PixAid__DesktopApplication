@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pixaid.ImpactTrackerController">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <BorderPane layoutX="420.0" layoutY="200.0" prefHeight="800.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <top>
+                        <AnchorPane prefHeight="93.0" prefWidth="1100.0" style="-fx-background-color: #ae95ad;" BorderPane.alignment="CENTER">
+                            <children>
+                                <Pane prefHeight="34.0" prefWidth="1100.0" style="-fx-background-color: #2A0128;">
+                                    <children>
+                                        <ImageView fx:id="exit" fitHeight="17.0" fitWidth="20.0" layoutX="1069.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                                            <image>
+                                                <Image url="@../photos/cross%20icon.png" />
+                                            </image>
+                                        </ImageView>
+                                        <ImageView fitHeight="22.0" fitWidth="21.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../photos/pixAid_icon.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label layoutX="42.0" layoutY="9.0" text="pixAid" textFill="#f2e8e8">
+                                            <font>
+                                                <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
+                                <Button fx:id="home_track" layoutY="34.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="198.0" style="-fx-background-color: transparent; -fx-cursor: hand;" styleClass="menuItem" stylesheets="@buttonStyle.css" text="Home" textFill="#f2e8e8">
+                                    <font>
+                                        <Font size="25.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="37.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../photos/home%20icon.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="profile_track" layoutX="442.0" layoutY="34.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="214.0" style="-fx-background-color: transparent; -fx-cursor: hand;" styleClass="menuItem" stylesheets="@buttonStyle.css" text="Profile" textFill="#f2e8e8">
+                                    <font>
+                                        <Font size="25.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="37.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../photos/user%20icon.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="gallery_track" layoutX="665.0" layoutY="36.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="216.0" style="-fx-background-color: transparent; -fx-cursor: hand;" styleClass="menuItem" stylesheets="@buttonStyle.css" text="Gallery" textFill="#f2e8e8">
+                                    <font>
+                                        <Font size="25.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="42.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../photos/gallery.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="faq_track" layoutX="881.0" layoutY="34.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="210.0" style="-fx-background-color: transparent; -fx-cursor: hand;" styleClass="menuItem" stylesheets="@buttonStyle.css" text="FAQ" textFill="#f2e8e8">
+                                    <font>
+                                        <Font size="25.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="33.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../photos/faqIcon.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                        <Button fx:id="Upload_track" layoutX="208.0" layoutY="34.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="233.0" style="-fx-background-color: transparent; -fx-cursor: hand;" styleClass="menuItem" stylesheets="@buttonStyle.css" text="Upload photo" textFill="#f2e8e8">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="37.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../photos/upload%20icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                            </children>
+                        </AnchorPane>
+                    </top>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <BarChart fx:id="barChart" layoutX="4.0" layoutY="157.0" prefHeight="455.0" prefWidth="1092.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                        <Label layoutX="246.0" layoutY="33.0" text="Tracking your impact, one smile at a time." textFill="#2a0128">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="430.0" layoutY="111.0" style="-fx-border-color: Black;" text="Track the donation per day" textFill="#670a69">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="donateNow_button" layoutX="410.0" layoutY="622.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="280.0" style="-fx-background-color: #2A0128; -fx-cursor: hand;" text="Donate Now" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </center>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

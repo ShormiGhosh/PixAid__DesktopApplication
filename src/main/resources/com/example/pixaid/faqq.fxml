@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pixaid.FAQController">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <BorderPane layoutX="142.0" layoutY="118.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <top>
+                        <AnchorPane prefHeight="106.0" prefWidth="1100.0" style="-fx-background-color: #ae95ad;" BorderPane.alignment="CENTER">
+                            <children>
+                                <ImageView fitHeight="48.0" fitWidth="46.0" layoutX="21.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true" />
+                                <Button fx:id="home_button_faq" layoutY="57.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="210.0" style="-fx-background-color: transparent; -fx-cursor: hand;" styleClass="menuItem" stylesheets="@buttonStyle.css" text="Home" textFill="#f2e8e8">
+                                    <font>
+                                        <Font size="25.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="37.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../photos/home%20icon.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="dash_button_faq" layoutX="210.0" layoutY="57.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="210.0" style="-fx-background-color: transparent; -fx-cursor: hand;" styleClass="menuItem" stylesheets="@buttonStyle.css" text="Dashboard" textFill="#f2e8e8">
+                                    <font>
+                                        <Font size="25.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="37.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../photos/dashboard%20icon.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="upload_button_faq" layoutX="420.0" layoutY="57.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="281.0" style="-fx-background-color: transparent; -fx-cursor: hand;" styleClass="menuItem" stylesheets="@buttonStyle.css" text="Upload photo" textFill="#f2e8e8">
+                                    <font>
+                                        <Font size="25.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="37.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../photos/upload%20icon.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="gallery_button_faq" layoutX="900.0" layoutY="59.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="192.0" style="-fx-background-color: transparent; -fx-cursor: hand;" styleClass="menuItem" stylesheets="@buttonStyle.css" text="Gallery" textFill="#f2e8e8">
+                                    <font>
+                                        <Font size="25.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="42.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../photos/gallery.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Pane prefHeight="34.0" prefWidth="1100.0" style="-fx-background-color: #2A0128;">
+                                    <children>
+                                        <ImageView fx:id="exit" fitHeight="17.0" fitWidth="20.0" layoutX="1069.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                                            <image>
+                                                <Image url="@../photos/cross%20icon.png" />
+                                            </image>
+                                        </ImageView>
+                                        <ImageView fitHeight="22.0" fitWidth="21.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../photos/pixAid_icon.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label layoutX="42.0" layoutY="9.0" text="pixAid" textFill="#f2e8e8">
+                                            <font>
+                                                <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
+                                <Button fx:id="profile_button_faq" layoutX="702.0" layoutY="59.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="197.0" style="-fx-background-color: transparent; -fx-cursor: hand;" styleClass="menuItem" stylesheets="@buttonStyle.css" text="Profile" textFill="#f2e8e8">
+                                    <font>
+                                        <Font size="25.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="42.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../photos/gallery.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                    </top>
+                    <center>
+                        <AnchorPane prefHeight="552.0" prefWidth="900.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+                            <children>
+                        <ImageView fitHeight="570.0" fitWidth="555.0" layoutX="546.0" layoutY="55.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../photos/Questions.gif" />
+                           </image>
+                        </ImageView>
+                                <Label layoutX="424.0" layoutY="74.0" prefHeight="36.0" prefWidth="253.0" text="What do you need help with?" textAlignment="CENTER" textFill="#4b0949" AnchorPane.leftAnchor="424.0" AnchorPane.rightAnchor="424.0">
+                                    <font>
+                                        <Font size="19.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="381.0" layoutY="38.0" prefHeight="36.0" prefWidth="338.0" text="Welcome To PixAid Chatbot" textAlignment="CENTER" textFill="#4b0949">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="25.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="searchField" layoutX="51.0" layoutY="196.0" prefHeight="40.0" prefWidth="500.0" promptText="Search for a question..." />
+                                <Button fx:id="searchButton" layoutX="506.0" layoutY="198.0" mnemonicParsing="false" onAction="#searchFAQ" prefHeight="26.0" prefWidth="31.0" style="-fx-cursor: hand; -fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../photos/searchIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                                <TextArea fx:id="answerArea" layoutX="51.0" layoutY="246.0" prefHeight="300.0" prefWidth="500.0" wrapText="true" />
+                            </children>
+                        </AnchorPane>
+                    </center>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

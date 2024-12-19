@@ -1,0 +1,15 @@
+/* Remove border and outline from WebView */
+.webview {
+        -fx-background-color: transparent; /* Transparent background */
+        -fx-border-radius: 15px;           /* Rounded corners */
+        -fx-border-width: 2px;             /* Thin border */
+        -fx-border-color: rgba(0, 0, 0, 0.2); /* Subtle border */
+        -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 15, 0.8, 0, 0); /* Soft shadow */
+        -fx-blend-mode: overlay;           /* Fancy blending effect */
+        -fx-opacity: 0.95;                 /* Slight transparency */
+        -fx-padding: 10px;                 /* Padding */
+        -fx-cursor: hand;                  /* Hand cursor on hover */
+
+    border: none;
+    outline: none;
+}

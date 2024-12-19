@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to pixAid</title>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #2A0128;
+      color: #fff;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    #app-logo {
+      width: 150px;
+      margin-bottom: 15px;
+    }
+    #app-name {
+      font-size: 4.5em;
+      margin-bottom: 10px;
+      font-family: 'Berlin Sans FB', sans-serif;
+      font-weight: normal;
+    }
+    #typed-text {
+      font-size: 2.5em;
+    }
+  </style>
+</head>
+<body>
+  <img src="/D:\DESKTOP_APPS\PixAid\src\main\resources\com\example\photos\pixAid_icon.png" alt="pixAid Logo" id="app-logo">
+  <h1 id="app-name">pixAid</h1>
+  <h2 id="typed-text">
+    <span id="typed"></span>
+  </h2>
+  <script>
+    var typed = new Typed("#typed", {
+      strings: ["capture", "donate", "support"],
+      typeSpeed: 70,
+      backSpeed: 20,
+      backDelay: 500,
+      loop: true,
+    });
+
+    // Automatically close or redirect after 5 seconds
+    setTimeout(function() {
+      window.location.href = "pixaid://login";
+    }, 5500); //5000 silo
+  </script>
+</body>
+</html>

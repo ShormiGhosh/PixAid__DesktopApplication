@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="gallery_show" prefHeight="243.0" prefWidth="230.0" styleClass="anchor-pane" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pixaid.PhotoAddToGalleryController">
+   <children>
+      <VBox layoutX="76.0" layoutY="26.0" prefHeight="226.0" prefWidth="230.0" styleClass="vbox" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="202.0" prefWidth="230.0">
+               <children>
+                  <ImageView fx:id="image_view" fitHeight="180.0" fitWidth="210.0" pickOnBounds="true" styleClass="image-view" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" AnchorPane.bottomAnchor="10.0" />
+               </children>
+            </AnchorPane>
+            <HBox prefHeight="29.0" prefWidth="230.0">
+               <children>
+                  <Label fx:id="label_title" prefHeight="18.0" prefWidth="110.0" styleClass="label-title" stylesheets="@styles.css" text="Title">
+                     <opaqueInsets>
+                        <Insets left="5.0" />
+                     </opaqueInsets>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label_price" alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="109.0" styleClass="label-price" text="\$0.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets right="25.0" />
+                     </opaqueInsets>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="230.0">
+               <children>
+                  <Button fx:id="addToCart_button" mnemonicParsing="false" onAction="#addToCart" prefHeight="26.0" prefWidth="111.0" styleClass="button" text="Add To Cart">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="showDetails_button" mnemonicParsing="false" onAction="#showDetails" prefHeight="26.0" prefWidth="107.0" styleClass="button" text="Show Details">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
