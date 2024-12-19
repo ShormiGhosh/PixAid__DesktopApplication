@@ -15,7 +15,7 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         try {
-            Parent welcomeRoot = FXMLLoader.load(getClass().getResource("welcomescreen.fxml"));
+            Parent welcomeRoot = FXMLLoader.load(getClass().getResource("welcomeScreen.fxml"));
             Scene welcomeScene = new Scene(welcomeRoot);
             Image icon = new Image(getClass().getResourceAsStream("pixAid_icon.png"));
             stage.getIcons().add(icon);
